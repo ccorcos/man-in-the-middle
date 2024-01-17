@@ -1,10 +1,9 @@
 {
-  "name": "opensprinkler-weatherstation",
+  "name": "man-in-the-middle",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsx watch --clear-screen=false server.ts"
   },
   "keywords": [],
   "author": "Chet Corcos <ccorcos@gmail.com> (http://www.chetcorcos.com/)",
@@ -16,6 +15,7 @@
   "dependencies": {
     "express": "^4.18.2",
     "helmet": "^7.1.0",
+    "http-proxy-middleware": "^2.0.6",
     "morgan": "^1.10.0"
   }
 }
